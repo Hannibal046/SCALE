@@ -1,0 +1,23 @@
+<|im_start|>system
+Assistant is an intelligent chatbot designed to help users translate from Xhosa to English.
+
+Context:
+- Assistant would be given many potentially useful reference answers from a fine-tuned model.
+- The number in brackets denotes the confidence score of a fine-tuned model to generate the token.
+<|im_end|>
+<|im_start|>user
+Source sentence: "UKuba iyashishinisa, simele sibe nayo. Ukuthi,akukho gunya lichaseneyo namandla enuclear" watsho uMnu Costello.
+Potentially useful reference answer 1: They(0.04) said,(0.45) "This(0.45) is(0.46) a(0.34) business(0.03) plan(0.08) that(0.72) we(0.15) must(0.74) have,(0.29) that(0.05) we(0.22) must(0.72) have".(0.38)
+Potentially useful reference answer 2: "We(0.21) have(0.88) to(0.56) have(0.54) it,(0.45) because(0.87) it's(0.64) a(0.78) business(0.03) opportunity:(0.08) no(0.01) political(0.26) opposition(0.93) to(0.98) nuclear(0.66) power",(0.68) said(0.93) Mr.(0.91) Costello.(1.00)
+Potentially useful reference answer 3: "If(0.46) it(0.50) is(0.01) in(0.51) the(0.07) interest(1.00) of(0.36) the(0.44) business(0.04) world,(0.79) we(0.32) should(0.88) have(0.67) it,(0.19) and(0.03) say,(0.24) There(0.79) is(0.98) no(0.20) authority(0.45) against(0.98) nuclear(0.71) power",(0.70) Mr(0.09) Costello(0.91) said.(1.00)
+Potentially useful reference answer 4: "Because(0.68) it(0.55) is(0.15) commercially(0.94) viable,(0.94) we(0.36) must(0.94) have(0.77) it",(0.39) said(0.94) Mr.(0.93) Costello,(0.76) "that(0.15) no(0.15) authority(0.45) is(0.31) against(0.96) nuclear(0.30) energy".(0.95)
+Target sentence: "If it becomes commercial, we should have it. That is, there's no in-principle objection to nuclear energy" Mr Costello said.
+
+Source sentence: "Ngoku sinempunku enenyanga ezine engenaswekile eyayifudula ineswekile," wongeze ngelitshoyo.
+Potentially useful reference answer 1: "Now(0.64) we(0.98) have(0.16) four(0.78) months(0.84) of(0.60) sugar-free(0.57) strawberries(0.86) that(0.77) used(1.00) to(0.64) be(0.92) sugar",(0.63) she(0.54) added.(1.00)
+Potentially useful reference answer 2: "We(0.38) have(0.71) now(0.12) the(0.70) four-month-old(0.92) sugar-free(0.62) duck(0.86) that(0.69) used(1.00) to(0.46) be(0.11) a(0.96) sugar(0.33) duck",(0.89) she(0.41) adds.(1.00)
+Potentially useful reference answer 3: "We(0.82) now(1.00) have(0.59) a(0.87) four-month-old(0.83) baby(0.35) without(0.17) the(1.00) sugar(0.70) that(0.10) once(0.25) contained(0.98) sugar",(0.67) he(0.34) adds.(1.00)
+Potentially useful reference answer 4: "We(0.82) now(1.00) have(0.59) a(0.87) four-month-old(0.79) frothy(0.02) froth(0.58) that(0.08) once(0.54) contained(1.00) sugar",(0.83) she(0.58) added.(1.00)
+<|im_end|>
+<|im_start|>assistant
+Target sentence: 

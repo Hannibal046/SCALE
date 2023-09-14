@@ -1,0 +1,53 @@
+<|im_start|>system
+Assistant is an intelligent chatbot designed to help users translate from Lao to Amharic.
+
+Context:
+- Assistant would be given a potentially useful reference answer from a fine-tuned model.
+- The number in brackets denotes the confidence score of a fine-tuned model to generate the token.
+<|im_end|>
+<|im_start|>user
+Source sentence: ສິບປີຕໍ່ມາ, ທ່ານໄດ້ນຳພາສ່ວນໜຶ່ງຂອງພາລະກິດ ອາໂປໂລ ໂຊຢຸດຊ໌ (Apollo - Soyuz) ຂອງໂຊຫວຽດ ຊຶ່ງເປັນສັນຍາລັກບົ່ງບອກວ່າ ການແຂ່ງຂັນທາງອາວະກາດໄດ້ສິ້ນສຸດລົງແລ້ວ.
+Potentially useful reference answer: Ten(0.90) years(0.88) later,(0.73) he(0.36) led(0.58) part(0.90) of(0.86) the(0.89) Soviet(0.70) Apollo-Soyuz(0.82) mission,(0.45) signaling(0.62) that(0.88) the(0.72) space(0.89) race(0.78) was(0.63) over.(0.89)
+Target sentence: ከአስር ዓመት በኋላ የሶቪዬት ክፍልን የአፖሎ – ሶዩዝ ተልዕኮ የቦታ ውድድር ማለቁን የሚያመለክት መሪ ሆነ።
+
+Source sentence: ແມ່ນແລ້ວ! ກະສັດ Tutankhamun, ບາງຄັ້ງກໍເອີ້ນວ່າ “ກະສັດ Tut” ຫຼື “ກະສັດໜຸ່ມ” ແມ່ນໜຶ່ງໃນບັນດາກະສັດອີຢິບບູຮານທີ່ມີຊື່ສຽງທີ່ສຸດໃນສະໄໝປະຈຸບັນ.
+Potentially useful reference answer: Yes!(0.82) King(0.89) Tutankhamun,(0.87) sometimes(0.34) called(0.27) King(0.83) Tut(0.85) or(0.83) Young(0.88) King(0.92) is(0.81) one(0.89) of(0.88) the(0.75) most(0.68) famous(0.38) ancient(0.92) Egyptian(0.65) monarchs(0.82) of(0.63) modern(0.93) times.(0.88)
+Target sentence: አዎ! ንጉስ ቱታንክሃሙን አንዳንዴ “ንጉስ ቱት” ወይም “ልጁ ንጉስ” ተብሎ የሚጠራው በዘመናዊ ጊዜዎች በጣም ታዋቂ ከሆኑት ጥንታዊ የግብጽ ንጉሶች አንዱ ነው።"
+
+Source sentence: ບໍລິສັດ HK Management Inc ເຊິ່ງເປັນບໍລິສັດຈັດການຂອງວົງດົນຕີດັ່ງກ່າວ, ບໍ່ໄດ້ໃຫ້ເຫດຜົນໃນເບື້ອງຕົ້ນໃນຕອນທີ່ພວກເຂົາຍົກເລີກງານໃນວັນທີ 20 ເດືອນກັນຍາ, ແຕ່ໄດ້ອ້າງເຫດຜົນດ້ານການຂົນສົ່ງໃນມື້ຕໍ່ມາ.
+Potentially useful reference answer: HK(0.91) Management(0.87) Inc.,(0.68) the(0.46) band's(0.87) management(0.89) company,(0.80) did(0.90) not(0.62) initially(0.76) give(0.63) a(0.89) reason(0.72) for(0.44) their(0.15) disbandment(0.83) on(0.47) 20(0.89) September,(0.84) but(0.71) cited(0.73) transportation(0.56) reasons(0.51) the(0.45) next(0.93) day.(0.82)
+Target sentence: የሙዚቃ ባንዱን የሚያስተዳድረው ድርጅት፣ HK Management Inc.፣ በSeptember 20 ቀን የነበረውን የሙዚቃ ድግስ ሲሰርዙ ምንም አይነት ምክንያት በመጀመሪያ አልሰጡም ነበር፣ ነገር ግን በቀጣዩ ቀን በሎጂስቲክስ ምክንያቶች እንደሆነ ሰበብ አቅርበዋል።
+
+Source sentence: ພວກເຮົາມີວິກິດການທາງດ້ານການເງິນຕະຫຼອດປີ ເຊິ່ງໄດ້ເກີດສະພາບທີ່ຮຸນແຮງທີ່ສຸດໃນສອງເດືອນທີ່ຜ່ານມາ ແລະ ຂ້ອຍຄິດວ່າອນນີ້ຕະຫຼາດການເງິນກຳລັງເລີ່ມຟື້ນໂຕຄືນ.”
+Potentially useful reference answer: We've(0.68) had(0.62) a(0.39) financial(0.84) crisis(0.44) all(0.89) year(0.49) long,(0.44) which(0.44) has(0.39) been(0.18) the(0.43) worst(0.25) in(0.79) the(0.70) last(0.61) two(0.89) months,(0.83) and(0.84) I(0.87) think(0.26) that(0.31) the(0.57) financial(0.75) markets(0.84) are(0.39) starting(0.89) to(0.40) recover.(0.77)
+Target sentence: በጣም ፈጣን ጊዜው ባለፉት ሁለት ወራት ውስጥ የነበረ፣ አንድ ዓመት የቆየ የገንዘብ ቀውስ አለን እና አሁን የገንዘብ ገበያዎቹ እያገገሙ እንደሆን አስባለሁ።”
+
+Source sentence: ບັນດາຫົວໜ້າເຫຼົ່ານີ້ແມ່ນຖືກຄວບຄຸມໂດຍ ໂປຼເວນຊາໂນ່ (Provenzano) ເມື່ອລາວຢຸດຕິສົງຄາມ ທີ່ຂັບເຄື່ອນໂດຍ ຣີອິນ່າ (Riina) ຕໍ່ຕ້ານກັບລັດທີ່ອ້າງເຖິງຊີວິດຂອງພວກມາເຟຍອົບພະຍົບ ກິໂອວານີ່ ຟອລ໌ຄອນ (Giovanni Falcone) ແລະ ເປົາໂລ ບໍເຊວລີໂນ່ (Paolo Borsellino) ໃນປີ 1992.”
+Potentially useful reference answer: These(0.32) chiefs(0.86) were(0.21) controlled(0.90) by(0.88) Provenzano(0.88) when(0.88) he(0.43) ended(0.40) Riina-led(0.57) war(0.55) against(0.79) the(0.82) state(0.67) that(0.93) claimed(0.89) the(0.91) lives(0.90) of(0.26) the(0.20) migrant(0.27) mafiosi(0.80) Giovanni(0.94) Falcone(0.91) and(0.89) Paolo(0.90) Borsellino(0.91) in(0.88) 1992.(0.64)
+Target sentence: በ1992 የማፊያ ተዋጊዎች ጂዮቫኒ ፋልከን እና ፖዎሎ ቦርሴሊኖን ህይወት ከነጠቀው ግዛት ጋር በሪና-የተመራውን ጦርነት ካስቆመ በኋላ እነዚህ አለቃዎች በፕሮቬንዛኖ ታግተው ነበር።”
+
+Source sentence: ພາຍຸ ເຟລີເຊຍ (Felicia), ຄັ້ງໜຶ່ງທີ່ເຄີຍເປັນພາຍຸປະເພດ 4 ໃນມາດຕາວັດແທກພາຍຸເຮີຣິເຄນຂອງ ຊາຟ໌ເຟີ-ຊິມຊັນ (Saffir-Simpson) ໄດ້ອ່ອນກຳລັງລົງເປັນພາຍຸເຂດເຂດຮ້ອນກ່ອນຈະສະລາຍຕົວໄປໃນວັນອັງຄານ.
+Potentially useful reference answer: Hurricane(0.81) Felicia,(0.83) once(0.87) a(0.62) Category(0.86) 4(0.40) storm(0.85) on(0.87) the(0.82) Saffir-Simpson(0.84) hurricane(0.86) scale,(0.82) weakened(0.85) to(0.86) a(0.90) tropical(0.91) storm(0.87) before(0.79) dissipating(0.81) on(0.87) Tuesday.(0.89)
+Target sentence: ፌሊሺያ፣ አንዴ በሳፊር-ሲምፕሰን የአውሎ ንፋስ መለኪያ ላይ ምድብ 4 የሆነ ሀይለኛ ንፋስ የቀላቀለ ዝናብ ማክሰኞ ከመሠራጨቱ በፊት ወደ አንስተኛ ግፊት ወዳለው ንፋስ ተዳከመ።
+
+Source sentence: Jonny Reid ຜູ້ຊ່ວຍຂັບສຳລັບທີມ A1GP New Zealand, ມື້ນີ້ໄດ້ສ້າງປະຫວັດສາດໂດຍການຂັບລົດໄວທີ່ສຸດໃນຂົວ Auckland Harbourອາຍຸ 48 ປີ ໃນ New Zealand ຢ່າງຖືກກົດໝາຍ.
+Potentially useful reference answer: Jonny(0.92) Reid,(0.66) the(0.35) assistant(0.82) driver(0.89) for(0.49) the(0.66) A1GP(0.80) New(0.91) Zealand(0.76) team,(0.79) today(0.62) made(0.88) history(0.89) by(0.23) legally(0.64) driving(0.80) the(0.80) fastest(0.79) car(0.44) on(0.67) the(0.45) 48-year-old(0.85) Auckland(0.90) Harbour(0.81) Bridge(0.87) in(0.91) New(0.91) Zealand.(0.88)
+Target sentence: ጆኒ ሪድ፣ ለኒው ዚላንድ የA1GP ረዳት ሹፌር፣ ከ 48 አመቱ ኦክላድ ሃርበር ድልድይ፣ ኒው ዚላንድ ላይ ህጋዊ በሆነ መንገድ በከፍተኛው ፍጥነት በመንዳት ታሪክን ሰርቷል።
+
+Source sentence: ການຕັດສິນໃຈຂອງທ່ານ Rudd ໃນການລົງນາມໃນຂໍ້ຕົກລົງດິນຟ້າອາກາດ Kyoto ແຍກອອກຈາກສະຫະລັດ ເຊິ່ງປະຈຸບັນນີ້ຖືເປັນເປັນປະເທດພັດທະນາແລ້ວປະເທດດຽວທີ່ບໍ່ລົງນາມຮອງຮັບຕໍ່ຂໍ້ຕົກລົງດັ່ງກ່າວ.
+Potentially useful reference answer: Rudd's(0.90) decision(0.89) to(0.74) sign(0.76) the(0.86) Kyoto(0.47) climate(0.36) agreement(0.20) separates(0.82) the(0.59) United(0.90) States,(0.66) now(0.48) considered(0.63) the(0.73) only(0.81) developed(0.66) country,(0.66) from(0.34) the(0.10) other(0.34) signatories.(0.75)
+Target sentence: የኮይቶን አየር ንብረት ስምምነት ለመፈረም የአቶ ሩድ የወሰነው ውሳኔ ዩናይትድ ስቴትስን ያገላል፣ እናም ካደጉ ሀገራት ውስጥ ይሄንን ስምምነት የማታጸድቅ ብቸኛ ሀገር ትሆናለች።
+
+Source sentence: ເທົ່າທີ່ພວກເຮົາຮູ້ມີພຽງແຕອົງປະກອບຂອງດາວເຄາະດວງໜຶ່ງເທົ່ານັ້ນທີ່ສະແດງການເຄື່ອນທີ່ຫຼາຍກ່ວາ Titan ແລະ ຊື່ຂອງມັນກໍຄືໂລກ” Stofan ກ່າວຕື່ມ.
+Potentially useful reference answer: As(0.89) far(0.89) as(0.89) we(0.85) know,(0.54) there(0.63) is(0.86) only(0.90) one(0.38) planetary(0.64) element(0.68) that(0.40) shows(0.80) more(0.68) activity(0.88) than(0.86) Titan,(0.71) and(0.62) its(0.88) name(0.88) is(0.39) Earth,(0.46) Stofan(0.65) added.(0.89)
+Target sentence: እኛ እስከምናውቀው ድረስ ከታይታን የበለጠ ተለዋዋጭነትን የሚያሳየው አንድ የፕላኔቶች አካል ብቻ ነው ስሙም ምድር ነው ሲል አክሏል ስቶፋን።
+
+Source sentence: ດຽວນີ້ມັນເຮັດໜ້າທີ່ເປັນສູນກາງ ແລະ ມີຫຼາຍສິ່ງຫຼາຍຢ່າງທີ່ດຳເນີນຕໍ່ໄປທັງກາງເວັນ ແລະ ກາງຄືນ.
+Potentially useful reference answer: Now(0.69) it's(0.54) a(0.46) hub(0.49) and(0.52) there's(0.66) a(0.73) lot(0.57) of(0.67) things(0.56) going(0.87) on(0.43) day(0.81) and(0.91) night.(0.88)
+Target sentence: አሁን እንደ መዓከላዊ ፕላዛ ያገለግላል፤ እናም ሁሌ ቀንም ማታም ብዙ ነገሮች ይካሄዱበታል።
+
+Source sentence: ທ່ານກ່າວຕື່ມວ່າ ດຽວນີ້ ພວກເຮົາມີໜູທີ່ມີອາຍຸ 4 ເດືອນທີ່ບໍ່ເປັນພະຍາດເບົາຫວານ ຊຶ່ງເຄີຍເປັນພະຍາດເບົາຫວານ.
+Potentially useful reference answer: He(0.64) added(0.75) that(0.47) we(0.84) now(0.84) have(0.68) a(0.46) four-month-old(0.73) non-diabetic(0.75) who(0.37) used(0.90) to(0.57) be(0.78) diabetic.(0.89)
+<|im_end|>
+<|im_start|>assistant
+Target sentence: 
