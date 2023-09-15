@@ -60,7 +60,6 @@ def get_bleurt_score(hyps,refs,batch_size=8,device='cuda:0'):
     for hyp,ref in zip(hyps,refs):
         with torch.no_grad():
             inputs = tokenizer(ref, hyp, padding='longest', return_tensors='pt', max_length=model.config.max_position_embeddings,truncation=True).to(device)
-            print(inputs.input_ids.shape)
             res = model(**inputs).logits.flatten().cpu().tolist()
             ret.extend(res)
     return sum(ret)/len(ret)

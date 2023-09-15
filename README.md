@@ -26,24 +26,12 @@ Considering the trade-off between speciallization and generalization of LLM and 
 pip install torch transformers datasets sacrebleu unbabel-comet
 pip install git+https://github.com/lucadiliello/bleurt-pytorch.git
 ```
-For COMETKiwi
-```bash
-git lfs install
-git clone https://huggingface.co/Unbabel/wmt22-cometkiwi-da
-```
 ## Evaluation
-We evalute our system with [COMET](https://unbabel.github.io/COMET/html/index.html), [BLEURT](https://github.com/google-research/bleurt), for completeness, we also include the results of [spBLEU and chrF++](https://github.com/mjpost/sacrebleu). To reproduce our results, for example in Table 1 of our paper, we refer to the following snippet:
+We evalute our system with [COMET](https://unbabel.github.io/COMET/html/index.html), [BLEURT](https://github.com/google-research/bleurt), for completeness, we also include the results of [spBLEU and chrF++](https://github.com/mjpost/sacrebleu). 
+For COMETKiwi, the checkpoint could be downloaded from [here](https://huggingface.co/Unbabel/wmt22-cometkiwi-da/tree/main).
+To reproduce our results, for example in Table 1 of our paper, we refer to the following snippet:
 ```python
-from evaluation import eval_translation
-from datasets import load_dataset
-
-src_lang = 'asm_Beng'
-trg_lang = 'eng_Latn'
-flores200 = datasets.load_dataset("facebook/flores","all")
-src = [x[f"sentence_{src_lang}"] for x in flores200['devtest']]
-refs = [x[f"sentence_{trg_lang}"] for x in flores200['devtest']]
-hyps = [x.strip() for x in open(f"output/refinement/iscl/{src_lang}2{trg_lang}.output")]
-print(eval_translation(src,hyps,refs))
+py
 ```
 
 ## Reproducibility
