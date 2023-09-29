@@ -1,22 +1,22 @@
-## In-Supervised-Context Learning for Machine Translation
+## SCALE: Synergized Collaboration of Asymmetric Language Translation Engines
 
-This repository contains the code and the generated output for this paper: [Large Language Models are In-Supervised-Context Translators](). In this paper, we propose a framework called ISCL, which combines the Supervised Translation Model with Large Language Model to perform translation tasks.
+This repository contains the code and the generated output for this paper: [SCALE: Synergized Collaboration of Asymmetric Language Translation Engines](). In this paper, we propose a framework called SCALE, which combines the Specialized Translation Model with Large Language Model to perform translation tasks.
 
 <div align=center>
-<img src="assets/model.svg" width="75%" height="75%">
+<img src="assets/model.jpg" width="75%" height="75%">
 </div>
 
-With ISCL, we achieved superior performance in the challenging low-resource setting, surpassing both few-shot GPT-4 and supervised NLLB model:
+With SCALE, we achieved superior performance in the challenging low-resource setting, surpassing both few-shot GPT-4 and supervised NLLB model:
 <div align=center>
-<img src="assets/refinement.jpg" width="75%" height="75%">
+<img src="assets/cover.jpg" width="75%" height="75%">
 </div>
 
-We also show that within ISCL framework, LLM-based translation system could do translation in any language pairs with high-resource langauge as pivotal point:
+We also show that within SCALE framework, LLM-based translation system could do translation in any language pairs with high-resource langauge as pivotal point:
 <div align=center>
 <img src="assets/pivot.jpg" width="75%" height="75%">
 </div>
 
-Considering the trade-off between speciallization and generalization of LLM and substantial computing cost for updating LLM, in ISCL, by fixing LLM and only updating small translation model, the overall performance could be greatly boosted:
+Considering the trade-off between speciallization and generalization of LLM and substantial computing cost for updating LLM, in SCALE, by fixing LLM and only updating small translation model, the overall performance could be greatly boosted:
 <div align=center>
 <img src="assets/update.jpg" width="75%" height="75%">
 </div>
@@ -39,14 +39,14 @@ trg_lang = 'eng_Latn'
 flores200 = load_dataset("facebook/flores","all")
 src = [x[f"sentence_{src_lang}"] for x in flores200['devtest']]
 refs = [x[f"sentence_{trg_lang}"] for x in flores200['devtest']]
-hyps = [x.strip() for x in open(f"output/refinement/iscl/{src_lang}2{trg_lang}.output")]
+hyps = [x.strip() for x in open(f"output/refinement/scale/{src_lang}2{trg_lang}.output")]
 print(eval_translation(src,hyps,refs))
 ```
 
 ## Reproducibility
 For the prompt we use, we refer to the `example` folder
 
-For the model output, we refer to the `output` folder where we include the results of ISCL for **refinement**, **pivoting**, **upudating** and **multi-path-sampling**. We also include the results from GPT-3.5, GPT-4, Microsoft Translator, NLLB, XGLM and M2M100.
+For the model output, we refer to the `output` folder where we include the results of SCALE for **refinement**, **pivoting**, **upudating** and **multi-path-sampling**. We also include the results from GPT-3.5, GPT-4, Microsoft Translator, NLLB, XGLM and M2M100.
 
 ## STM Generation
 For Supervised Translation Model(STM) doing translation, we use the following command:
