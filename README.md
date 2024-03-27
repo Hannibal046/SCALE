@@ -1,6 +1,6 @@
 ## SCALE: Synergized Collaboration of Asymmetric Language Translation Engines
 
-This repository contains the code and the generated output for this paper: [SCALE: Synergized Collaboration of Asymmetric Language Translation Engines](https://arxiv.org/abs/2309.17061). In this paper, we propose a framework called SCALE, which combines the Specialized Translation Model with Large Language Model to perform translation tasks.
+This repository contains the code and the generated output for this paper: **SCALE: Synergized Collaboration of Asymmetric Language Translation Engines**. In this paper, we propose a framework called SCALE, which combines the Specialized Translation Model with Large Language Model to perform translation tasks.
 
 <div align=center>
 <img src="assets/model.jpg" width="75%" height="75%">
